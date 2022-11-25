@@ -8,6 +8,10 @@ header{
         align-items: center;
 
         margin-top: 2rem;
+        margin-left: $body-lr-md-space;
+        margin-right: $body-lr-md-space;
+
+
 
         .__logo{
             margin-right: 3rem;
@@ -29,6 +33,106 @@ header{
             a{
                 margin-right: 2rem;
 
+            }
+        }
+    }
+
+
+    .header__content{
+
+        // position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        padding: 5rem 0;
+
+        padding-bottom: 8rem;
+
+        max-width: 100%;
+
+        margin-left: $body-lr-md-space;
+
+        // 
+
+        div:first-of-type{
+            width: fit-content;
+            width: 40%;
+        }
+
+        h1{
+            font-size: 3.7rem;
+            line-height: 4rem;
+            color: $very-dark-violet;
+        }
+        p{
+            line-height: 1.8rem;
+            margin-bottom: 1.8rem;
+        }
+
+
+        &--illu3x{
+            position: relative;
+            right: -9%;
+            width: 60%;
+            
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+@media (max-width:$mobile-breakpoint) {
+    header{
+        .header__nav {
+            margin-left: $body-lr-sm-space;
+            margin-right: $body-lr-sm-space;
+    
+            .__logo {
+                margin-right: 0;
+            }
+    
+            ul,
+            .call_to_actions {
+                display: none;
+            }
+        }
+
+        .header__content {
+
+            // position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+
+            padding: 2rem 0;
+
+            padding-bottom: 3rem;
+
+            margin:$body-lr-sm-space;
+
+            // 
+
+            & div{
+                width: 100% !important;
+                // background-color: red;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                line-height: 3rem;
+            }
+
+            p {
+                line-height: 1.8rem;
+                margin-bottom: 1.8rem;
+            }
+
+
+            &--illu3x {
+                right: 0%;
             }
         }
     }

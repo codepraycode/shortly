@@ -24,6 +24,8 @@ body{
 
     color: $grayish-violet;
 
+    overflow-x: hidden;
+
 }
 
 // Make all lists of no type
@@ -47,6 +49,17 @@ a{
 }
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
+
 button,
 input[type=button],
 .btn{
@@ -56,7 +69,7 @@ input[type=button],
     background-color: $cyan;
     color: $white;
     
-    padding: 0.62rem 1.8rem;
+    padding: 0.72rem 2.1rem;
     font-weight: $fw-700;
     font-size: .75rem;
     border-radius: 6px;
@@ -78,14 +91,14 @@ input[type=button],
 }
 
 
-header,
+// header,
 section,
 footer{
     margin: 0 9rem;
 }
 
-@media (max-width:800px) {
-    header,
+@media (max-width:$mobile-breakpoint) {
+    // header,
     section,
     footer {
         margin: 0 3rem;

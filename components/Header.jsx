@@ -40,6 +40,7 @@ const Header = () => {
 
         {/* Header content */}
         <div className="header__content">
+
             <div>
                 <h1>More than just shorter links</h1>
                 <p>
@@ -53,7 +54,7 @@ const Header = () => {
             </div>
 
 
-            <div className="header__content__illu3x">
+            <div className="header__content--illu3x">
                 <img src="/images/illustration-working.svg" alt="ill3x"/>
             </div>
         </div>
