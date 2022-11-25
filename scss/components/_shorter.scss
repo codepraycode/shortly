@@ -80,6 +80,21 @@
             visibility: visible;
         }
     }
+
+    &[data-loading=true] {
+
+        input {
+            box-shadow: 0 0 4px .1rem $cyan;
+            color: $gray;
+            &::placeholder{
+                color: $gray;
+            }
+        }
+        & ~button {
+            cursor: not-allowed;
+            opacity: .9;
+        }
+    }
 }
 
 .shorter__lists{
@@ -98,9 +113,18 @@
 
         font-size: .9rem;
 
-        span {
+        width: 100%;
+
+        &>span {
             color: $dark-violet;
             font-weight: $fw-700;
+            
+            
+            max-width: 65%;
+            word-break: break-all;
+
+            
+
         }
 
         div{
@@ -112,6 +136,7 @@
 
             span{
                 color: $cyan;
+                font-weight: $fw-700;
             }
         }
 

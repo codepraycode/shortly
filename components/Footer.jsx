@@ -59,7 +59,7 @@ const Footer = () => {
                 </a>
             </div>
 
-            <span class="attribution">
+            <span className="attribution">
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
                 <br/>
                 Coded by <a href="https://github.com/codepraycode">codepraycode</a>.
