@@ -19,7 +19,7 @@ body{
 
     
     font-size: $base-fs;
-    font-weight: $fw-500;
+    // font-weight: $fw-500;
 
     // background-color: lighten($color: $gray, $amount: 10%);
     background-color: $gray;
@@ -43,7 +43,7 @@ a{
     color: $grayish-violet;
     transition: color 0.3s ease;
     font-size: 0.9rem;
-    font-weight: $fw-700;
+    // font-weight: $fw-700;
     &:hover{
         color: $cyan;
     }
@@ -93,7 +93,7 @@ input[type=button],
 
 
 section{
-    width: 100%;
+    max-width: 100%;
     .section__title,
     .section__content{
         margin: 0 $body-lr-md-space;
@@ -115,8 +115,11 @@ section{
 }
 
 footer{
-    width: 100%;
+    max-width: 100%;
     margin: 0 $body-lr-md-space;
+    background-color: $very-dark-blue;
+    box-shadow: 0 0 0 100vmax $very-dark-blue;
+    clip-path: inset(0 -100vmax);
 }
 
 @media (max-width:$mobile-breakpoint) {
