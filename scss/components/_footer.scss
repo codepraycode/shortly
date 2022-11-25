@@ -1,0 +1,24 @@
+@use '../variables' as *;
+
+
+.footer__entry{
+    background-color: $dark-violet;
+    background-image: url('/images/bg-boost-desktop.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    margin-top: 10rem;
+    padding: 3.5rem 0;
+
+    color: $white;
+
+    .section__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+
+    }
+}

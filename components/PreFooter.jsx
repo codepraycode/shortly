@@ -5,7 +5,7 @@ const PreFooter = () => {
     <section className='footer__entry'>
 
         <div className="section__content">
-            <h3>Boost your links today</h3>
+            <h1>Boost your links today</h1>
 
             <button className='btn btn-rounded'>
                 Get Started
