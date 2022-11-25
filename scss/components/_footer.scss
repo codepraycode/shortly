@@ -92,6 +92,10 @@ footer{
 }
 
 @media (max-width:$mobile-breakpoint) {
+
+    .footer__entry{
+        background-image: url('/images/bg-boost-mobile.svg');
+    }
     footer {
         flex-direction: column;    
         align-items: center;

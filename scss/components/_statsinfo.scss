@@ -87,35 +87,35 @@
 
 @media (max-width:$mobile-breakpoint) {
     .stats__ercepts {
-    
-    
-            
-            align-items: center;
-            justify-content: center;
 
-            flex-direction: column;
-    
-            row-gap: 2.9rem;
-    
-            &::after {
-                height: 80%;
-                width: 7px;
-                top: 0%;
+        margin-top: 5rem !important;
+            
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+
+        row-gap: 2.9rem;
+
+        &::after {
+            height: 80%;
+            width: 7px;
+            top: 0%;
+        }
+
+
+        article {
+            text-align: center;
+
+            .ercept__icon {
+                
+                left: 38%;
+                width: 70px;
+                height: 70px;    
             }
-    
-    
-            article {
-                text-align: center;
-    
-                .ercept__icon {
-                    
-                    left: 38%;
-                    width: 70px;
-                    height: 70px;    
-                }
-    
-            }
-    
+
+        }
+
     
         }
 }
