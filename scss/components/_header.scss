@@ -1,0 +1,35 @@
+@use '../variables' as *;
+
+header{
+    background-color: $white;
+
+    .header__nav{
+        display: flex;
+        align-items: center;
+
+        margin-top: 2rem;
+
+        .__logo{
+            margin-right: 3rem;
+            display: flex;
+            align-items: center;
+        }
+
+        ul{
+            margin-right: auto;
+
+            display: flex;
+            align-items: center;
+            column-gap: 2rem;
+
+        }
+
+        .call_to_actions{
+            // background-color: red;
+            a{
+                margin-right: 2rem;
+
+            }
+        }
+    }
+}

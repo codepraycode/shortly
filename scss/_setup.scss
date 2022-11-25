@@ -40,6 +40,7 @@ a{
     color: $grayish-violet;
     transition: color 0.3s ease;
     font-size: 0.9rem;
+    font-weight: $fw-700;
     &:hover{
         color: $cyan;
     }
