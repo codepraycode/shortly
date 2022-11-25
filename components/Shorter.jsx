@@ -8,7 +8,7 @@ const ERROR_AND_MESSAGE = {
     1:"Please add a link",
     2:"Invalid url",
     3:"Try again",
-    4:"Cannot generate link",
+    4:"Cannot generate shortened url",
     5:"shortcode already taken/in use",
     6:"Unknown error",
     10:"Cannot shorten this link"
@@ -27,7 +27,7 @@ function storeUrls(key, value) {
 }
 
 const STORAGE_KEY = "shortly_urls";
-const DEFAULT_ERROR_MESSAGE = "Cannot generate link";
+const DEFAULT_ERROR_MESSAGE = "Could not shorten url";
 const Shorter = () => {
 
     const [eneteredUrl, setEnteredUrl] = useState('');
@@ -100,7 +100,7 @@ const Shorter = () => {
 
 
     return (
-        <section className='deep'>
+        <section>
 
             <div className="section__content shorter__content">
             

@@ -161,6 +161,7 @@
         flex-direction: column;
 
         background-image: url('/images/bg-shorten-mobile.svg');
+        background-position: 100% -10%;
 
         row-gap: 20px;
 
@@ -168,11 +169,18 @@
         .form_input {
     
             width: 90%;
+
+            
+        }
+
+        .error_message {
+            top: 4.9rem;
         }
 
         button {
             width: 90%;
             font-size: .9rem !important;
+            margin-top: 1.2rem;
         }
     }
 
