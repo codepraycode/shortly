@@ -14,7 +14,7 @@ const StatsInfo = () => {
         </div>
 
 
-        <div className="section__content stats_ercepts">
+        <div className="section__content stats__ercepts">
 
             <article>
                 
@@ -34,7 +34,6 @@ const StatsInfo = () => {
                 </div>
 
             </article>
-
 
             <article>
                 

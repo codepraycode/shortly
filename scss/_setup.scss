@@ -21,7 +21,8 @@ body{
     font-size: $base-fs;
     font-weight: $fw-500;
 
-
+    // background-color: lighten($color: $gray, $amount: 10%);
+    background-color: $gray;
     color: $grayish-violet;
 
     overflow-x: hidden;
@@ -98,8 +99,18 @@ section{
         margin: 0 $body-lr-md-space;
     }
 
-    &.deep{
-        background-color: $gray;
+    .section__title{
+        width: 40%;
+        text-align: center;
+        margin: 5rem auto;
+        h2{
+            color: $very-dark-blue;
+        }
+        p{
+            margin-top: .5rem;
+            letter-spacing: .01rem;
+        }
+        
     }
 }
 
