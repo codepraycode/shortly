@@ -21,8 +21,8 @@ body{
     font-size: $base-fs;
     // font-weight: $fw-500;
 
-    // background-color: lighten($color: $gray, $amount: 10%);
-    background-color: $gray;
+    background-color: lighten($color: $gray, $amount: 15%);
+    // background-color: $gray;
     color: $grayish-violet;
 
     overflow-x: hidden;
