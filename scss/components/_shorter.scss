@@ -37,7 +37,6 @@
     flex-direction: column;
 
     width: 70%;
-
     
 
     input{
@@ -55,6 +54,8 @@
 
 
     .error_message{
+        visibility: hidden;
+
         position: absolute;
         bottom: .92rem;
 
@@ -63,6 +64,21 @@
         font-size: .8rem;
 
         font-style: italic;
+    }
+
+    &[data-error=true]{
+
+        input{
+            box-shadow: 0 0 0 .2rem $red;
+            color: $red;
+            &::placeholder{
+                color: $red;
+            }
+        }
+
+        .error_message{
+            visibility: visible;
+        }
     }
 }
 

@@ -8,13 +8,13 @@ const Shorter = () => {
         
             <div className="shorter__actions">
 
-                <div className="form_input">
+                <div className="form_input" data-error={false}>
                     <input 
                         type="text" 
                         placeholder='Shorten a link here...' 
                     />
 
-                    {/* <span className='error_message'>An error message</span> */}
+                    <span className='error_message'>An error message</span>
                 </div>
 
                 <button className='btn'>
