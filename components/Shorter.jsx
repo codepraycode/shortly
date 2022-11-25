@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 
 const baseApi = 'https://api.shrtco.de/v2';
@@ -14,19 +14,30 @@ const ERROR_AND_MESSAGE = {
     10:"Cannot shorten this link"
 }
 
+function getStoredUrls(key) {
+    const str = localStorage.getItem(key);
+
+    const data = str ? JSON.parse(str) : {}
+
+    return data
+}
+
+function storeUrls(key, value) {
+    return localStorage.setItem(key, value);
+}
+
+const STORAGE_KEY = "shortly_urls";
 const DEFAULT_ERROR_MESSAGE = "Cannot generate link";
 const Shorter = () => {
 
     const [eneteredUrl, setEnteredUrl] = useState('');
     const [error, setError] = useState(null);
-    const [shortenedUrls, setShortenedUrls] = useState({});
+    const [shortenedUrls, setShortenedUrls] = useState(()=>getStoredUrls(STORAGE_KEY));
 
 
     const [loading, setLoading] = useState(false);
 
     const [copiedLinkUrl, setCopiedLinkUrl] = useState(null);
-
-
 
     const handleSubmit = async(e)=>{
 
@@ -83,8 +94,9 @@ const Shorter = () => {
 
     }
 
-    
-
+    useMemo(()=>{
+        storeUrls(STORAGE_KEY, JSON.stringify(shortenedUrls));
+    },[shortenedUrls]);
 
 
     return (
