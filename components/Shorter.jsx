@@ -2,9 +2,9 @@ import React from 'react'
 
 const Shorter = () => {
   return (
-    <section>
+    <section className='deep'>
 
-        <div className="section__content">
+        <div className="section__content shorter__content">
         
             <div className="shorter__actions">
 
@@ -14,7 +14,7 @@ const Shorter = () => {
                         placeholder='Shorten a link here...' 
                     />
 
-                    <span className='error_message'>An error message</span>
+                    {/* <span className='error_message'>An error message</span> */}
                 </div>
 
                 <button className='btn'>
@@ -25,7 +25,7 @@ const Shorter = () => {
 
             <div className="shorter__lists">
 
-                <div className="shorter_lists_item">
+                <div className="shorter__lists--item">
                     <span>https://sample.com</span>
 
                     <div>
@@ -35,17 +35,17 @@ const Shorter = () => {
                     </div>
                 </div>
 
-                <div className="shorter_lists_item">
+                <div className="shorter__lists--item">
                     <span>https://sample1.com</span>
 
                     <div>
                         <span>https://reLink.com/fdkets</span>
 
-                        <input type="button" data-copied={true} value="Copied" />
+                        <input type="button" data-copied={true} value="Copied!" />
                     </div>
                 </div>
 
-                <div className="shorter_lists_item">
+                <div className="shorter__lists--item">
                     <span>https://sample2.com</span>
 
                     <div>

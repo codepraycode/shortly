@@ -91,16 +91,34 @@ input[type=button],
 }
 
 
-// header,
-section,
+section{
+    width: 100%;
+    .section__title,
+    .section__content{
+        margin: 0 $body-lr-md-space;
+    }
+
+    &.deep{
+        background-color: $gray;
+    }
+}
+
 footer{
-    margin: 0 9rem;
+    width: 100%;
+    margin: 0 $body-lr-md-space;
 }
 
 @media (max-width:$mobile-breakpoint) {
-    // header,
-    section,
+
+    section {
+        .section__title,
+        .section__content {
+            margin: 0 $body-lr-sm-space;
+        }
+    }
+
     footer {
-        margin: 0 3rem;
+        width: 100%;
+        margin: 0 $body-lr-sm-space;
     }
 }
