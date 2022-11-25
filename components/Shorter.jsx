@@ -11,7 +11,7 @@ const Shorter = () => {
                 <div className="form_input" data-error={false}>
                     <input 
                         type="text" 
-                        placeholder='Shorten a link here...' 
+                        placeholder='Shorten a link here...'
                     />
 
                     <span className='error_message'>An error message</span>

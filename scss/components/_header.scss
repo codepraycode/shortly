@@ -132,8 +132,18 @@ header{
 
 
             &--illu3x {
-                right: 0%;
+                position: relative;
+                right: -10%;
+                top:-20px;
+
+                img{
+                    width: 400px;
+                }
             }
         }
+
+        text-align: center;
+
+        padding-bottom: 4rem;
     }
 }

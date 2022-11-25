@@ -122,3 +122,80 @@
         }
     }
 }
+
+
+@media (max-width:$mobile-breakpoint) {
+    .shorter__content {
+        
+        top: -4.5rem;
+        // margin-top: 3rem;
+    }
+
+    .shorter__actions {
+
+        flex-direction: column;
+
+        row-gap: 20px;
+
+        padding: 1.5rem 0;
+        .form_input {
+    
+            width: 90%;
+        }
+
+        button {
+            width: 90%;
+            font-size: .9rem !important;
+        }
+    }
+
+    .shorter__lists {
+
+        &--item {
+
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+
+            padding: 0;
+            
+
+            font-size: .9rem;
+            &>span{
+                padding: .9rem 1.5rem;
+
+                display: block;
+                width: 100%;
+
+                border-bottom: 1px solid $gray;
+            }
+
+            div {
+                width: 100%;
+                
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                
+                row-gap: .9rem;
+
+                margin: 0rem;
+
+                padding: .2rem 1.5rem 1.2rem 1.5rem;
+                
+                span {
+                    color: $cyan;
+                    margin-top: .9rem;
+                }
+
+            }
+
+        }
+
+
+        input[type=button] {
+            width: 100%;
+        }
+    }    
+
+}
